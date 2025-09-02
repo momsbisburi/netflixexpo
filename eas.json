@@ -1,32 +1,25 @@
 {
   "cli": {
-    "version": ">= 5.9.0"
+    "version": ">= 5.2.0",
+    "appVersionSource": "local"
   },
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
-    },
-    "preview": {
       "distribution": "internal",
       "ios": {
-        "simulator": false
+        "simulator": true
       }
+    },
+    "preview": {
+      "distribution": "internal"
     },
     "production": {
       "ios": {
-        "simulator": false
-      }
-    },
-    "sideload": {
-      "distribution": "internal",
-      "ios": {
-        "simulator": false,
-        "enterpriseProvisioning": "adhoc"
+         "buildConfiguration": "Release",
+        "simulator": true,
+        "developmentClient": false
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }

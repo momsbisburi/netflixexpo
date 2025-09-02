@@ -1,22 +1,27 @@
 {
   "expo": {
-    "name": "MovieFlix",
+    "name": "movieflix-app",
     "slug": "movieflix-app",
     "version": "1.0.0",
+    "scheme": "movieflix",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
+    "userInterfaceStyle": "light",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.movieflix",
+      "simulator": true,
+      "bundleIdentifier": "com.momsbisburi.movieflixapp",
       "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
@@ -25,18 +30,15 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
+        "backgroundColor": "#FFFFFF"
       },
-      "package": "com.yourname.movieflix"
+      "package": "com.momsbisburi.movieflixapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
-    "plugins": [
-      "expo-router"
-    ],
     "extra": {
-      "router": {},
       "eas": {
         "projectId": "c0ae8f91-430e-4e29-bbc6-e634e0b62936"
       }
